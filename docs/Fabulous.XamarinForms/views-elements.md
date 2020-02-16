@@ -149,7 +149,7 @@ View.Grid(
         for i in 1 .. 6 do
             for j in 1 .. 6 ->
                 let color = Color((1.0/float i), (1.0/float j), (1.0/float (i+j)), 1.0)
-                View.BoxView(color).GridRow(i-1).GridColumn(j-1)
+                View.BoxView(color).Row(i-1).Column(j-1)
     ]
 )
 ```
@@ -157,7 +157,7 @@ View.Grid(
 Notes:
 
 * Row and column definitions can use `"*"`, `N*` where `N` is a number, `"auto"` or a thickness
-* Fluent methods `.GridRow(..)` and `.GridColumn(..)` are used to place the items in locations on the grid.
+* Fluent methods `.Row(..)` and `.Column(..)` are used to place the items in locations on the grid.
 
 <img src="https://user-images.githubusercontent.com/52166903/60177360-9cdae280-9810-11e9-98fd-fda569cd8836.png" width="400">
 
